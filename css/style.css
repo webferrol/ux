@@ -43,6 +43,10 @@ abbr {
   text-align: center;
 }
 
+.elBody h1 a {
+  color: black;
+}
+
 .cabecera, .contenido {
   width: 80%;
   margin: 0 auto;
