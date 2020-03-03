@@ -1,0 +1,198 @@
+@charset "UTF-8";
+:root {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+input {
+  border: 1px solid gray;
+  min-height: 1.8em;
+}
+
+select {
+  border: 1px solid gray;
+}
+
+abbr {
+  cursor: help;
+}
+
+.elBody {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebe3e3), to(white));
+  background-image: linear-gradient(#ebe3e3, white);
+}
+
+.elBody h1 {
+  text-align: center;
+}
+
+.cabecera, .contenido {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contenido {
+  counter-reset: encabezados;
+}
+
+.contenido h2 {
+  counter-increment: encabezados 1;
+}
+
+.contenido h2::before {
+  content: counter(encabezados) " ";
+}
+
+.formulario {
+  max-width: 20em;
+  padding: .5em;
+  border: 1px solid gray;
+  border-radius: .5em;
+  background-color: white;
+}
+
+.formulario h2 {
+  margin-top: 0;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  background-color: #854545;
+  border-radius: .5em;
+  -webkit-box-shadow: 2px 3px 3px 1px black;
+          box-shadow: 2px 3px 3px 1px black;
+}
+
+.formulario strong, .formulario a {
+  color: #ad6302;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.formulario a:hover {
+  text-decoration: underline;
+}
+
+.formulario a::before {
+  content: "☞ ";
+}
+
+.formulario .cookies::before {
+  content: "☞ ";
+}
+
+.formulario .campo label {
+  display: block;
+}
+
+.formulario .campo input[type=text], .formulario .campo select {
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 1.5em;
+  border-style: none;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  background-color: #854545;
+  border-radius: .5em;
+  -webkit-box-shadow: 2px 3px 3px 1px black;
+          box-shadow: 2px 3px 3px 1px black;
+}
+
+.listado {
+  padding-left: 4em;
+  list-style-type: upper-roman;
+}
+
+.formulario.enlinea {
+  max-width: 40em;
+  width: 40em;
+}
+
+.formulario.enlinea .campo {
+  margin-bottom: 1em;
+}
+
+.formulario.enlinea .campo label {
+  display: inline-block;
+}
+
+.formulario.enlinea .campo input, .formulario.enlinea .campo select {
+  max-width: 20em;
+  padding: .2em;
+}
+
+.boton {
+  display: inline-block;
+  line-height: 1.5em;
+  color: white;
+  padding: 0 1.5em;
+  background-color: red;
+  border-radius: 1.5em;
+}
+
+table.bocetos {
+  max-width: 50em;
+  border-collapse: collapse;
+}
+
+table.bocetos thead {
+  color: orange;
+  font-size: 1.6em;
+}
+
+table.bocetos th, table.bocetos td {
+  border: 1px dotted grey;
+}
+
+table.bocetos td {
+  padding: 1em;
+}
+
+table.bocetos td::before {
+  content: "●";
+}
+
+[class^=ejemplo] {
+  padding: 1.5em 0;
+}
+
+[class^=ejemplo]::before, [class^=ejemplo]::after {
+  content: "";
+  display: block;
+}
+
+[class^=ejemplo]::before {
+  -webkit-box-shadow: 0 -10px 5px 1px black;
+          box-shadow: 0 -10px 5px 1px black;
+}
+
+[class^=ejemplo]::after {
+  -webkit-box-shadow: 0 15px 5px 1px black;
+          box-shadow: 0 15px 5px 1px black;
+}
+
+.seccion3 img {
+  max-width: 913px;
+}
+/*# sourceMappingURL=style.css.map */

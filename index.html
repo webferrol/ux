@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/script.js"></script>
+    <title>User Experience</title>
+</head>
+<body class="elBody">
+    <header class="cabecera">
+        <h1><abbr title="User eXperience">UX</abbr></h1>
+    </header>
+    <div class="contenido">
+        <section class="seccion1">
+            <header>
+                <h2>affordance</h2>
+                <div class="definicion">
+                    Un falso <strong>affordance</strong> es un elemento que parece que es un botón o cualquier otro elemento interactivo y no los es generando <em>frunstración</em> y <em>problemas</em> en la navegación.
+                </div>
+            </header>
+            <div class="ejemplo1">
+                ¿Dónde crees que está los <strong>falsos affordances</strong> en el formulario de abajo?
+                <form class="formulario fcurso" action="./">
+                    <h2>Encuentra tu curso</h2>
+                    <ol>
+                        <li class="campo">
+                            <label for="destinatario">Destinatario</label>
+                            <input type="text" id="destinatario" name="destinatario">
+                        </li>
+                        <li class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" id="telefono" name="telefono">
+                        </li>
+                    </ol>
+                    <button type="submit">Enviar</button>
+                    <div class="cookies">Si quieres saber algo de nuestra <strong>política de privacidad</strong> y sobre las <strong>cookies</strong> puedes pulsar el siguiente <a href="#">enlace</a>.</div>
+                </form>                
+            </div>
+            <div>
+                <h3>¿Qué podemos hacer?</h3>
+                <ol class="listado">
+                    <li>Necesitamos <strong>detectar los elementos</strong> que puenden <em>confundir</em> a los usuarios por parecer interactivos y eliminarlos.</li>
+                    <li>
+                        Cuando definimos los estilos (de textos, links, botones, etc.), estamos <em>creando un lenguaje humano-computadora</em>.
+                        <ul>
+                            <li>
+                                Un lenguaje necesita consitencia.
+                            </li>
+                            <li>Quiere decir que un <em>link</em> no puede parecer un texto y que un texto no puede parecer <em>link</em></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Por eso, <strong>definir nuestro estilos</strong> o utilizar un <a title="Bootstrap" href="https://getbootstrap.com/">framework</a> es fundamental.
+                    </li>
+                    
+                </ol>
+            </div>
+        </section>
+        <section class="seccion2">
+            <header>
+                <h2>Reduzcamos el esfuerzo de los usuarios</h2>
+            </header>
+            <div class="ejemplo2">
+                <form class="formulario f2" action="./">
+                    <ol>
+                        <li class="campo">
+                            <label for="label">
+                            Label 
+                            </label>
+                            <input id="label" type="text" name="label">
+                        </li>
+                        <li class="campo">
+                            <label for="label2">
+                            Label 2
+                            </label>
+                            <select name="label2" id="label2">
+                                <option value="">valor1</option>
+                                <option value="">valor2</option>
+                                <option value="">valor3</option>
+                                <option value="">valor4</option>
+                            </select>
+                        </li>
+                        <li class="campo">
+                            <label for="label3">
+                            Label 3
+                            </label>
+                            <input id="label3" type="text" name="label3">
+                        </li>
+                    </ol>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div>
+                    En este ejemplo tenemos ventajas y desventajas:
+                    <ul class="listado">
+                        <li>El procesamiento y lectura es rápido</li>
+                        <li>La etiqueta <em>label</em> y el <em>control de formulario</em> se encentran adyacentes</li>
+                    </ul>
+                    La única pega es que si incrementamos el número de campos también se incrementa el espacio vertical pudiendo dejar mucha pantalla desaprovechada, aunque pueden surgir <strong>problemas de legibilidad</strong>
+                </div>
+            </div>
+            <div>
+                <h3>¿Qué podemos hacer?</h3>
+                <ol class="listado">
+                    <li><a href="#" class="boton">Ajustar</a> los <em>label</em> y los <em>controles de formularios</em> a una línea.</li>
+                </ol>
+            </div>
+            <div>
+                <h3>¿Qué podemos hacer con nuestros formularios?</h3>
+                <ol class="listado">
+                    <li>Definir una <strong>alineación</strong> en función de lo que queramos lograr: <em>rapidez</em> o <em>facilidad de scan</em></li>
+                    <li><em>Distinguir y separar</em> el <strong>call to action</strong> principal del secundario</li>
+                    <li><em>Hacer mensajes de error</em> que señalen el campo en cuestión. Incluyan formato (<em>no sólo color</em>) y muestren de forma humana la solución.</li>
+                    <li><strong>Disminuir al máximo los campos</strong> con el objetivo de liberar al usuario de realizar un <em>esfuerzo</em>.</li>
+                    <li><strong>Evitar formularios en varias columnas</strong> para evitar al usuario de saltar de una columna a otra y provocar el olvido de completar campos.</li>
+                </ol>
+            </div>
+        </section>
+        <section class="seccion3">
+            <header>
+                <h2>Crear bocetos y prototipos</h2>
+                <figure>
+                    <img src="images/boceto_youtube.png" alt="Muestra de boceto de Youtube">
+                    <figcaption>Boceto de Youtube</figcaption>
+                </figure>
+            </header>
+            <table class="bocetos">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Boceto
+                        </th>
+                        <th scope="col">
+                            Prototipo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Sirve para <strong>discutir</strong> con nuestro equipo
+                        </td>
+                        <td>
+                            Sirve para que un usuario <strong>crea que es real</strong> e interactúe (así observamos y aprendemos)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Podemos utilizar <strong>elementos de diseño</strong> como <em>lorem ipsum</em>, <em>footer</em>
+                        </td>
+                        <td>
+                            Nescitamos poner textos, precios, etc. que sean <strong>semireales</strong>. De este modo el usuario entra en escena.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
